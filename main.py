@@ -74,6 +74,7 @@ def fetch_stock_data(id: int):
     stock.forward_pe = yahoo_data.info['forwardPE']
     stock.forward_eps = yahoo_data.info['forwardEps']
     stock.profit_margins = yahoo_data.info['profitMargins']
+    stock.operating_margins = yahoo_data.info['operatingMargins']
     stock.dividend_yield = yahoo_data.info['dividendYield'] * 100
 
     db.add(stock)
