@@ -69,6 +69,7 @@ $(document).ready(function() {
       <th>Profit Margin</th>
       <th>50 Day MA</th>
       <th>200 Day MA</th>
+      <th>EBITDA</th>
     </tr>
   </thead>
   <tbody>
@@ -82,6 +83,7 @@ $(document).ready(function() {
        <td>{{ stock.profit_margins }}</td>
       <td>{{ stock.ma50 }}</td>
       <td>{{ stock.ma200 }}</td>
+      <td>{{ stock.ebitda }}</td>
     </tr>
     {% endfor %}
   </tbody>

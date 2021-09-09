@@ -75,6 +75,7 @@ def fetch_stock_data(id: int):
     stock.forward_eps = yahoo_data.info['forwardEps']
     stock.profit_margins = yahoo_data.info['profitMargins']
     stock.operating_margins = yahoo_data.info['operatingMargins']
+    stock.ebitda = yahoo_data.info['ebitda']
     stock.dividend_yield = yahoo_data.info['dividendYield'] * 100
 
     db.add(stock)
@@ -99,3 +100,6 @@ async def create_stock(stock_request: StockRequest, background_tasks: Background
         "code": "success",
         "message": "stock was added to the database"
     }
+
+
+print('How Significant are You in the grand scheme of things')

@@ -16,3 +16,4 @@ class Stock(Base):
     ma200 = Column(Numeric(10, 2))
     profit_margins = Column(Numeric(10, 2))
     operating_margins = Column(Numeric(10, 2))
+    ebitda = Column(Numeric(10, 2))
