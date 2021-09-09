@@ -17,3 +17,8 @@ class Stock(Base):
     profit_margins = Column(Numeric(10, 2))
     operating_margins = Column(Numeric(10, 2))
     ebitda = Column(Numeric(10, 2))
+    shortName = Column(String, index=True)
+
+
+
+print('Lol oya do am if he easy ')

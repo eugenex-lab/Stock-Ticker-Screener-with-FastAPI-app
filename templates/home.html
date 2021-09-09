@@ -62,6 +62,7 @@ $(document).ready(function() {
   <thead>
     <tr>
       <th>Symbol</th>
+      <th>Company </th>
       <th>Price</th>
       <th>Forward P/E</th>
       <th>Forward EPS</th>
@@ -76,6 +77,7 @@ $(document).ready(function() {
     {% for stock in stocks %}
     <tr>
       <td>{{ stock.symbol }}</td>
+      <td>{{ stock.shortName }}</td>
       <td>{{ stock.price }}</td>
       <td>{{ stock.forward_pe }}</td>
       <td>{{ stock.forward_eps }}</td>

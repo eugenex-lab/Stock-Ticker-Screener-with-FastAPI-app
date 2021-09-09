@@ -76,6 +76,7 @@ def fetch_stock_data(id: int):
     stock.profit_margins = yahoo_data.info['profitMargins']
     stock.operating_margins = yahoo_data.info['operatingMargins']
     stock.ebitda = yahoo_data.info['ebitda']
+    stock.shortName = yahoo_data.info['shortName']
     stock.dividend_yield = yahoo_data.info['dividendYield'] * 100
 
     db.add(stock)
