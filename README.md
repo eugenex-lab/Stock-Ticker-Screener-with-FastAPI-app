@@ -1,6 +1,6 @@
 Didn't see a lot of examples out there for this framework, so decided to create one.
 
-## Step 1: Hello World of FastAPI, Stub out the API endpoints
+## Step 1:  Stub out the API endpoints
 
 * Display Hello World
 * Map out endpoints we will need, comment what they will do
