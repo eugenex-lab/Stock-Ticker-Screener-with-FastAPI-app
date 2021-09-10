@@ -61,15 +61,20 @@ $(document).ready(function() {
 <table class="ui celled table">
   <thead>
     <tr>
-      <th>Symbol</th>
+      <th>Stock Ticker</th>
       <th>Company </th>
       <th>Price</th>
       <th>Forward P/E</th>
       <th>Forward EPS</th>
       <th>Dividend Yield</th>
       <th>Profit Margin</th>
-      <th>50 Day MA</th>
-      <th>200 Day MA</th>
+      <th>Total Revenue</th>
+      <th>Debt to Equity</th>
+        <th>50 Day MA</th>
+        <th>200 Day MA</th>
+      <th>Issued Shares</th>
+      <th>ROA</th>
+      <th>ROE</th>
       <th>EBITDA</th>
     </tr>
   </thead>
@@ -83,8 +88,13 @@ $(document).ready(function() {
       <td>{{ stock.forward_eps }}</td>
       <td>{{ stock.dividend_yield }}</td>
        <td>{{ stock.profit_margins }}</td>
+       <td>{{ stock.total_revenue }}</td>
+       <td>{{ stock.debt_to_equity }}</td>
       <td>{{ stock.ma50 }}</td>
       <td>{{ stock.ma200 }}</td>
+      <td>{{ stock.shares_outstanding }}</td>
+      <td>{{ stock.r_on_assets }}</td>
+      <td>{{ stock.r_on_equity }}</td>
       <td>{{ stock.ebitda }}</td>
     </tr>
     {% endfor %}

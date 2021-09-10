@@ -77,7 +77,13 @@ def fetch_stock_data(id: int):
     stock.operating_margins = yahoo_data.info['operatingMargins']
     stock.ebitda = yahoo_data.info['ebitda']
     stock.shortName = yahoo_data.info['shortName']
-    stock.dividend_yield = yahoo_data.info['dividendYield'] * 100
+    stock.shares_outstanding = yahoo_data.info['sharesOutstanding']
+    stock.r_on_assets = yahoo_data.info['returnOnAssets']
+    stock.r_on_equity = yahoo_data.info['returnOnAssets']
+    stock.total_revenue = yahoo_data.info['totalRevenue']
+    stock.dividend_yield = yahoo_data.info['dividendYield']
+    stock.debt_to_equity = yahoo_data.info['dividendYield']
+
 
     db.add(stock)
     db.commit()

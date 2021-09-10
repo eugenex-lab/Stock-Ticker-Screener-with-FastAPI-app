@@ -16,9 +16,12 @@ class Stock(Base):
     ma200 = Column(Numeric(10, 2))
     profit_margins = Column(Numeric(10, 2))
     operating_margins = Column(Numeric(10, 2))
-    ebitda = Column(Numeric(10, 2))
+    ebitda = Column(Numeric(10, 0))
+    shares_outstanding = Column(Numeric(10, 0))
     shortName = Column(String, index=True)
-
-
+    r_on_assets = Column(Numeric(10, 2))
+    r_on_equity = Column(Numeric(10, 2))
+    total_revenue = Column(Numeric(10, 0))
+    debt_to_equity = Column(Numeric(10, 2))
 
 print('Lol oya do am if he easy ')
